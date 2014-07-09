@@ -1,0 +1,20 @@
+<html ng-app="App">
+    <head>
+        <title>Increment</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/controller/simple_controller.js"></script>
+        <script src="../js/controller/footerController.js"></script>
+    </head>
+    <body ng-controller="simpleController" >
+
+
+        <button ng-click="incrementar()">Clicar</button>
+        <label>Você clicou: {{total}} veze(s)</label>
+
+        <footer ng-controller="footerController">
+            {{copyright}}
+        </footer>
+
+    </body>
+</html>
